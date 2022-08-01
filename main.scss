@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Finlandica', sans-serif;
+    list-style: none;
+}
+:root{
+    --clr: #222327;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/limpieza.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .navbar__menu{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width: 100px;
+            margin: 20px;
+        }
+        .bar-btn{
+            font-size: 2rem;
+            color: #fff;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .nav__menu{
+            position: fixed;
+            width: 100%;
+            height: 0vh;
+            top: 100px;
+            background: rgba(0, 0, 0, .95);
+            text-align: center;
+            transition: all .5s;
+        }
+    }
+    
+}
+
+.nav__menu li{
+    display: none;
+    line-height: 30px;
+    margin: 100px 0;
+    transition: all .5s;
+}
+.nav__menu a{
+    text-decoration: none;
+    color: goldenrod;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav__menu li a.active, .nav__menu li a:hover{
+    color: #fff;
+    transition: .3s;
+}
+
+#check{
+    display: none;
+}
+#check:checked ~ .nav__menu{
+    height: 100vh;
+}
+#check:checked ~ .nav__menu li{
+    display: block;
+}
+
+
+.banner__text{
+    padding: 0 30px;
+    text-align: center;
+    color:#fff;
+    .title{
+        font-size: 3rem;
+        padding-top: 50px;
+        padding-bottom: 170px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        text-shadow: 4px 4px 5px goldenrod;
+    }
+    .button1{
+        color: rgb(255, 255, 255);
+        font-family: 'Finlandica', sans-serif;
+        font-size: 1.5rem;
+        text-decoration: none;
+        background: #222327;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 0 #222327;
+    }
+    .button1:hover{
+        transition: .5s;
+        color: #fff;
+        background: #ca0202;
+    }
+}
+
+.main{
+    background: url(img/header.jpg);
+    color: goldenrod;
+    width: 100%;
+    height: auto;
+    font-family: 'Finlandica', sans-serif;
+    .container{
+        display: block;
+        .title{
+            padding: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    .container-fluid{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .card{
+            padding: 10px;
+            background: #222327;
+            box-shadow: 0 0 10px 0 #fff;
+            margin: 20px 0;
+            border-radius: 20px;
+            transition: all ease-out 0.2s;
+            .card-title{
+                text-align: center;
+                color: #ffffff;
+
+            }
+            .card-text{
+                text-align: center;
+
+            }
+        }
+        .card:hover{
+            transform: scale(1.02);
+        }
+    }
+    .text_main{
+        padding: 20px;
+        text-align: center;
+        .text__one{
+            font-size: 2rem;
+            color: #fff;
+            padding-bottom: 20px;
+        }
+        .button2{
+            font-family: 'Finlandica', sans-serif;
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            background: #222327;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 10px 30px;
+            transition: 0.5s;
+            position: relative;
+            border: 2px solid var(--clr);
+        }
+        .button2:hover{
+            letter-spacing: 0.15em;
+            background: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+            color: var(--clr);
+        }
+        .button2::before{
+            content: " ";
+            position: absolute;
+            inset: 2px;
+            background: #222327;
+        }
+        a span{
+            position: relative;
+            z-index: 1;
+        }
+        a i{
+            position: absolute;
+            inset: 0;
+            display: block;
+        }
+        a i::before{
+            content: " ";
+            position: absolute;
+            top: -6px;
+            left: 100%;
+            transform: translateX(-50%);
+            transition: 0.5s;
+            width: 10px;
+            height: 10px;
+            background: #222327;
+            border: 2px solid var(--clr);
+        }
+        a:hover i::before{
+            left: 0%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        a i::after{
+            content: " ";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transform: translateX(-50%);
+            transition: 0.5s;
+            width: 10px;
+            height: 10px;
+            background: #222327;
+            border: 2px solid #ca0202;
+        }
+        a:hover i::after{
+            left: 100%;
+            transform: translateX(-50%) rotate(45deg);
+            border: 2px solid var(--clr);
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:400px){
+    .header{
+        .title{
+            font-size: 2.2rem;
+            padding-top: 70px;
+            padding-bottom: 150px;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            text-shadow: 4px 4px 5px goldenrod;
+        }
+        .button1{
+            color: gold;
+            font-size: 1rem;
+            text-decoration: none;
+            background: #222327;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px 0 goldenrod;
+        }
+        .button1:hover{
+            transition: .5s;
+            color: #222327;
+            background: #ca0202;
+            
+        }
+    }
+    .main{
+        .container-fluid{
+            display: inline-block;
+            padding: 15px;
+        }
+        .text_main{
+            padding: 15px;
+            text-align: center;
+            .text__one{
+                color: #fff;
+                font-size: 1.8rem;
+                padding-bottom: 35px;
+            }
+            .button2{
+                color: gold;
+                font-size: 1rem;
+                text-decoration: none;
+                background: #222327;
+                padding: 15px;
+                border-radius: 20px;
+                box-shadow: 0 0 20px 0 goldenrod;
+            }
+        }
+    }
+}
+    
