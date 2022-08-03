@@ -121,6 +121,7 @@ body {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 20px 0 #222327;
           box-shadow: 0 0 20px 0 #222327;
+  margin: 0 40px;
 }
 
 .banner__text .button1:hover {
@@ -166,6 +167,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 30px;
 }
 
@@ -295,8 +298,16 @@ body {
   border: 2px solid var(--clr);
 }
 
+.main .pictures__products {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+}
+
 .footer {
   background: #222327;
+  height: auto;
+  width: 100%;
 }
 
 .footer .text__footer {

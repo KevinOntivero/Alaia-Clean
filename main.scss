@@ -101,6 +101,7 @@ body{
         padding: 10px;
         border-radius: 20px;
         box-shadow: 0 0 20px 0 #222327;
+        margin: 0 40px;
     }
     .button1:hover{
         transition: .5s;
@@ -134,6 +135,7 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 0 30px;
         .card{
             padding: 15px;
@@ -238,10 +240,17 @@ body{
             border: 2px solid var(--clr);
         }
     }
+    .pictures__products{
+        width: 300px;
+        height: 300px;
+        margin: 30px;
+    }
 }
 
 .footer{
     background: #222327;
+    height: auto;
+    width: 100%;
     .text__footer{
         display: flex;
         justify-content: center;
