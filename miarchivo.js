@@ -28,3 +28,16 @@ let confirmacion = confirm("¿Desea realizar una accion?")
         }else{
             alert("Usted seguira en la pagina")
         }
+
+/* Dom, modificamos un ID */
+let cambio = document.getElementById("textOne");
+cambio.style.textTransform = "uppercase";
+
+/*  query */
+let textQuery = document.querySelector( " .text_main ");
+textQuery.style.background = "#000"; 
+
+/* innerHTML */
+textOne.innerHTML = ("Ingresar al link para mas productos");
+
+    
