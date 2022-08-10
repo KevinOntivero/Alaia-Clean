@@ -1,4 +1,8 @@
-
+/* evento Dom, CLICK */
+let boton = document.getElementById("buscar");
+boton.addEventListener("click",()=>{
+    console.log("Buscar")
+})
 
 let confirmacion = confirm("¿Desea realizar una accion?")
     if(confirmacion == true){
@@ -39,5 +43,8 @@ textQuery.style.background = "#000";
 
 /* innerHTML */
 textOne.innerHTML = ("Ingresar al link para mas productos");
+
+
+
 
     

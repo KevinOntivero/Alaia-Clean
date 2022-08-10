@@ -215,7 +215,7 @@ body {
   text-shadow: 0 5px 5px #fc26df;
 }
 
-.main .text_main .button2 {
+.main .text_main #button2 {
   font-family: 'Finlandica', sans-serif;
   font-size: 1.5rem;
   color: #fff;
@@ -230,7 +230,7 @@ body {
   border: 2px solid var(--clr);
 }
 
-.main .text_main .button2:hover {
+.main .text_main #button2:hover {
   letter-spacing: 0.15em;
   background: var(--clr);
   -webkit-box-shadow: 0 0 35px var(--clr);
@@ -238,7 +238,7 @@ body {
   color: var(--clr);
 }
 
-.main .text_main .button2::before {
+.main .text_main #button2::before {
   content: " ";
   position: absolute;
   inset: 2px;

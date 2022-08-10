@@ -171,7 +171,7 @@ body{
             padding-bottom: 40px;
             text-shadow: 0 5px 5px #fc26df;
         }
-        .button2{
+        #button2{
             font-family: 'Finlandica', sans-serif;
             font-size: 1.5rem;
             color: #fff;
@@ -184,13 +184,13 @@ body{
             position: relative;
             border: 2px solid var(--clr);
         }
-        .button2:hover{
+        #button2:hover{
             letter-spacing: 0.15em;
             background: var(--clr);
             box-shadow: 0 0 35px var(--clr);
             color: var(--clr);
         }
-        .button2::before{
+        #button2::before{
             content: " ";
             position: absolute;
             inset: 2px;
